@@ -1,0 +1,4 @@
+framework module BiometricSDKUIFaceModePassiveCore {
+  header "BiometricSDKUIFaceModePassiveCore-Swift.h"
+  requires objc
+}

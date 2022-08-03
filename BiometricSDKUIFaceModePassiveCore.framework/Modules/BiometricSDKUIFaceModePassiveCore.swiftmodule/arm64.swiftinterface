@@ -1,0 +1,94 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BiometricSDKUIFaceModePassiveCore
+import BiometricSDK
+import Foundation
+import Swift
+import UIKit
+@objc @_inheritsConvenienceInitializers public class CaptureInfoView : UIKit.UIView {
+  @objc dynamic public var counterColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  public var text: Swift.String {
+    get
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public func startCountdown(seconds: Swift.Int, completionHandler: (() -> ())? = nil)
+  public func showCountdown(seconds: Swift.Int)
+  public func showHint(text: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ChallengeResultView : UIKit.UIView {
+  @objc dynamic public var validColor: UIKit.UIColor
+  @objc dynamic public var invalidColor: UIKit.UIColor
+  @objc dynamic public var validImage: UIKit.UIImage?
+  @objc dynamic public var invalidImage: UIKit.UIImage?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func showResult(success: Swift.Bool)
+  @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PassiveLivenessCaptureView : UIKit.UIView {
+  @objc public var minimumDevicePitch: Swift.Double
+  @objc public var previewView: UIKit.UIImageView {
+    @objc get
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func start()
+  @objc public func stop()
+  @objc public func handleCapturePrepared(delay: Swift.Int = 3, timeToUnlockHandler: (() -> (Swift.Int))? = nil, completionHandler: (() -> ())? = nil)
+  @objc public func handleCaptureInfo(info: BiometricSDK.BIOCapturingInfo, error: Swift.Error?)
+  @objc public func handleCaptureIsLocked(seconds: Swift.Int)
+  @objc public func handleCaptureFinished(images: [BiometricSDK.BIOFaceImage]?, biometrics: BiometricSDK.BIOBiometrics?, error: Swift.Error?, animationDuration: Foundation.TimeInterval = 1, completionHandler: (() -> ())? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BlurOverlayView : UIKit.UIView {
+  @IBInspectable @objc dynamic public var blurEffectStrongness: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @IBInspectable @objc dynamic public var blurColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PassiveLivenessHintsView : UIKit.UIView {
+  @objc dynamic public var hintsColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hintsDetailsColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hintsBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var imageTintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var faceImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public func resetState()
+  public func startCountdown(seconds: Swift.Int, completionHandler: (() -> ())? = nil)
+  public func handleDevicePitchTooLow()
+  public func handleScreenTap()
+  public func handleCaptureIsLocked(seconds: Swift.Int)
+  public func handleCaptureInfo(info: BiometricSDK.BIOCapturingInfo)
+  @objc deinit
+}
