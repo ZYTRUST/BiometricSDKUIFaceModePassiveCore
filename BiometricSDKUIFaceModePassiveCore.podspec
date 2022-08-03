@@ -15,7 +15,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = "BiometricSDKUIFaceModePassiveCore.framework"
 
-  s.static_framework = true
-
 
 end
