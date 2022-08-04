@@ -9,11 +9,13 @@ Pod::Spec.new do |s|
   s.homepage     = "http://idemia.com"
   s.license      = { :type => "Copyright", :text => "Copyright by Idemia" }
   s.author       = "Idemia"
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", :tag => "2.3.2" }
 
   s.requires_arc = true
   s.vendored_frameworks = "BiometricSDKUIFaceModePassiveCore.framework"
+
+  s.static_framework = true
 
 
 end
