@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BiometricSDKUIFaceModePassiveCore"
-  s.version      = "2.3.1"
+  s.version      = "2.3.1.1"
   s.summary      = "The BiometricSDKUIFaceModePassiveCore library is targeted to developers who want to use already prepared UI controls for CR2D."
   s.description  = <<-DESC
           The BiometricSDKUIFaceModePassiveCore library is targeted to developers who want to use already prepared UI controls for CR2D.
