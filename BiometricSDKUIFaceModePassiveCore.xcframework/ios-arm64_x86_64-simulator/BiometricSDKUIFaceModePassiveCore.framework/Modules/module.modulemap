@@ -1,0 +1,6 @@
+framework module BiometricSDKUIFaceModePassiveCore {
+  umbrella header "BiometricSDKUIFaceModePassiveCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
