@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BiometricSDKUIFaceModePassiveCore",
-            path: "BiometricSDKUIFaceModePassiveCore.xcframework"
+            path: "Sources/BiometricSDKUIFaceModePassiveCore.xcframework"
         )
     ]
 )
